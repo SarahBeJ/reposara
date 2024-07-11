@@ -22,7 +22,6 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -37,15 +36,12 @@
             <version>5.8.1</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- Mockito -->
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
             <version>4.0.0</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -68,19 +64,18 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-         <distributionManagement>
+    <distributionManagement>
         <repository>
             <id>nexus-releases</id>
             <name>Nexus Release Repository</name>
-            <url>http://nexus.example.com/repository/maven-releases/</url>
+            <url>http://actual-nexus-url/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>nexus-snapshots</id>
             <name>Nexus Snapshot Repository</name>
-            <url>http://nexus.example.com/repository/maven-snapshots/</url>
+            <url>http://actual-nexus-url/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
-
     <build>
         <plugins>
             <plugin>
@@ -113,5 +108,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
