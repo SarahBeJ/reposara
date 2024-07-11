@@ -112,7 +112,7 @@
     <repository>
         <id>deploymentRepo</id>
         <name>Nexus Release Repository</name>
-        <url>http://192.168.50.4:8081/repository/maven-releases/</url>
+        <url>http://192.168.50.4:8081/#browse/browse:maven-releases</url>
     </repository>
     <snapshotRepository>
         <id>snapshotRepo</id>
